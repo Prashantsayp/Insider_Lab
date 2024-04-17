@@ -1,0 +1,48 @@
+<IfModule mod_rewrite.c>
+    <IfModule mod_negotiation.c>
+        Options -MultiViews -Indexes
+    </IfModule>
+
+    RewriteEngine On
+ 
+    RewriteCond %{SERVER_PORT} 80 
+    RewriteRule ^(.*)$ https://localhost/insiderlab/$1 [R,L]
+
+    # Handle Authorization Header
+    RewriteCond %{HTTP:Authorization} .
+    RewriteRule .* - [E=HTTP_AUTHORIZATION:%{HTTP:Authorization}]
+
+    # Redirect Trailing Slashes If Not A Folder...
+    RewriteCond %{REQUEST_FILENAME} !-d
+    RewriteCond %{REQUEST_URI} (.+)/$
+    RewriteRule ^ %1 [L,R=301]
+
+    # Send Requests To Front Controller...
+    RewriteCond %{REQUEST_FILENAME} !-d
+    RewriteCond %{REQUEST_FILENAME} !-f
+    RewriteRule ^ index.php [L]
+
+    #PROTECT htaccess file
+<Files .htaccess>
+order allow,deny
+Deny from all
+</Files>
+ <Files ~ "\.(env|json|config.js|md|xml|gitignore|gitattributes|lock|editorconfig|yml|styleci.yml)$">
+     Order allow,deny
+     Deny from all
+ </Files>
+ Options -Indexes
+ <Files ~ "(artisan|package.json|webpack.mix.js)$">
+     Order allow,deny
+     Deny from all
+ </Files>
+</IfModule>
+#disable directory browsing
+Options -Indexes
+
+#PROTECT env file
+#<Files .env>
+#order allow,deny
+#Deny from all
+#</Files>
+

@@ -1,0 +1,948 @@
+:root {
+    --theme-purple: #30353B;
+    --theme-white: #ffffff;
+    --highlight: #D9D9D9;
+    --font-color: #30353B;
+}
+
+body {
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Lato',
+        sans-serif !important;
+    color: #232323;
+    background-color: #efefef !important;
+    font-size: .9rem !important;
+}
+
+header {
+    background:var(--theme-purple);
+    /* border-bottom: 4px solid #ffcd11; */
+    box-shadow: 0 1px 5px 0 rgba(0, 0, 0, .3);
+    height: 59px;
+    width: 100%;
+    margin-bottom: 15px;
+}
+
+.top-header {
+    float: left;
+    padding: 10px 24px 0px 15px;
+    width: 100%;
+}
+
+.logo {
+    font-size: 18px;
+    display: block;
+}
+
+.logo a,
+.logo a:hover {
+    color: #fff;
+    text-decoration: none;
+}
+
+
+
+.header-top-left {
+    float: left;
+    color: #ffffff;
+
+}
+
+.header-top-right {
+    float: right;
+}
+
+/*
+*
+* ==========================================
+* CUSTOM UTIL CLASSES
+* ==========================================
+*
+*/
+
+.dropdown-submenu {
+    position: relative;
+}
+
+.dropdown-submenu>a:after {
+    content: "\f0da";
+    float: right;
+    border: none;
+    font-family: 'FontAwesome';
+}
+
+.dropdown-submenu>.dropdown-menu {
+    top: 0;
+    left: 100%;
+    margin-top: 0px;
+    margin-left: 0px;
+}
+
+/*
+*
+* ==========================================
+* FOR DEMO PURPOSES
+* ==========================================
+*
+*/
+
+
+/** CSS Media Query **/
+@media (max-width:481px) {
+    .btn-export {
+        top: 10px !important;
+        float: left !important;
+        margin: 0 !important;
+    }
+
+    .assessment-summary-head {
+        margin-top: 25px;
+        padding-top: 10px !important;
+    }
+
+}
+
+@media (max-width:768px) {
+    .dataTables_wrapper {
+        top: 45px;
+    }
+
+    .cos-impact-box {
+        top: 3px !important;
+        left: 38px !important;
+    }
+
+
+
+
+}
+
+@media (min-width: 991px) {
+    .dropdown-menu {
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+
+}
+
+@media (max-width: 1024px) {
+    .cc-home-main .btn-custom-head {
+        width: 100% !important;
+        border-right: 0px !important;
+        border-bottom: 1px solid #dfdfdf !important;
+    }
+
+    span.sub-head-cci {
+        width: 100% !important;
+        border-radius: 0px !important;
+        border-bottom: 1px solid #dfdfdf;
+    }
+
+    .card-body {
+        padding: 10px !important;
+    }
+}
+
+.navbar {
+    padding-top: 0px !important;
+    padding-bottom: 0px !important;
+}
+
+
+
+/* Dashboard widgets style */
+
+.card-custom {
+    border: 1px solid var(--theme-purple) !important;
+    margin-bottom: 30px;
+}
+
+.card-custom label {
+    font-size: 13px;
+}
+
+.card-custom .card-subtitle {
+    background:var(--theme-purple);
+    width: auto;
+    color: #fff !important;
+    padding: 10px;
+    font-weight: bold;
+    text-align: center;
+    border-radius: 25px;
+    max-width: 100px;
+    margin: 0 auto;
+}
+
+.form-control,
+.dropdown-menu {
+    font-size: .8rem !important;
+}
+
+.welcome-link {
+    position: absolute;
+    right: 16px;
+}
+
+.card-custom .card-link {
+    margin: 2px 5px 2px !important;
+    float: left;
+    width: 100%;
+}
+
+
+.sprtr {
+    float: left;
+    width: 100%;
+    margin-top: 15px;
+    margin-bottom: 20px;
+    border-bottom: 1px solid #333;
+}
+
+/* Custom Global CSS */
+.m-r-10 {
+    margin-right: 10px;
+}
+
+.disable-link {
+    color: #333 !important;
+}
+
+.view_sprtr {
+    color: #fff;
+    border-bottom: 1px solid #fff;
+    width: 95%;
+    float: left;
+}
+
+.card-custom h5 {
+    font-size: 1rem !important;
+}
+
+
+
+.card-custom a:hover {
+    text-decoration: none;
+}
+
+
+/* Common CSS */
+.color-blue {
+    color: #007bff;
+}
+
+.color-red {
+    color: #dc3545;
+}
+
+.color-green {
+    color: #02e25c;
+}
+
+.color-cat-dark {
+    color: #af8a00 !important;
+}
+
+.m-t-0 {
+    margin-top: 0px !important;
+}
+
+.m-b-0 {
+    margin-bottom: 0px !important;
+}
+
+.m-r-16 {
+    margin-right: 16px;
+}
+
+.m-t-29 {
+    margin-top: 29px;
+}
+
+.m-b-10 {
+    margin-bottom: 10px !important;
+}
+
+.m-l-15 {
+    margin-left: 15px;
+}
+
+.m-l-20 {
+    margin-left: 20px;
+}
+
+.m-r-5 {
+    margin-right: 5px !important;
+}
+
+.header-top-left .page-title {
+    font-size: 19px;
+    line-height: 36px;
+    color: #ffffff;
+}
+
+.page-title {
+    margin-bottom: 15px !important;
+
+}
+
+.text-underline-none {
+    text-decoration: none !important;
+}
+
+.placeholder {
+    color: grey;
+}
+
+.user-profile-main button#userProfileMenu{border:1px solid white !important;}
+.btn-outline-secondary{
+    color:#ffffff !important
+}
+
+/** Custom css start CC Home page **/
+.cc-home-main .card-header {
+    padding: 0px !important;
+}
+
+.cc-home-main .btn-custom-head {
+    float: left;
+    width: 200px;
+    text-align: left;
+    border-right: 1px solid #dfdfdf;
+    border-radius: 0px !important;
+    margin: 0 !important;
+    padding-left: 20px;
+    font-size: 15px;
+    line-height: 23px;
+}
+
+.cc-home-main p.according-head-txt {
+    float: left;
+    margin: 0;
+    line-height: 23px;
+    padding: 7px 12px;
+    font-weight: 400;
+    font-size: 15px;
+}
+
+.cc-home-main .card .card-body {
+    padding: 0px !important;
+}
+
+.cc-home-main .list-group-item {
+    border-radius: 0px !important;
+}
+
+.cc-home-main li.list-group-item {
+    padding: 0px;
+    float: left;
+}
+
+.cc-home-main .list-group-item {
+    border: 0px;
+    border-bottom: 1px solid rgba(0, 0, 0, .125);
+}
+
+span.sub-head-cci {
+    padding: 10px !important;
+    float: left;
+    width: 200px;
+    border-right: 1px solid #dfdfdf;
+    border-left: 20px solid #ffcd11;
+    font-weight: 500;
+    font-size: 13px;
+
+
+}
+
+span.sub-content-cci {
+    padding: 10px !important;
+    float: left;
+    font-size: 13px;
+}
+
+.cc-home-main .card-header .btn-icon-cc:after {
+    font-family: 'FontAwesome';
+    content: "\f068";
+    left: -10px;
+    position: relative;
+    top: 2px;
+    float: left;
+    text-decoration: none !important;
+}
+
+.btn-link.focus,
+.btn-link:focus,
+.btn-link:hover {
+    text-decoration: none !important;
+}
+
+.cc-home-main .card-header .collapsed:after {
+    /* symbol for "collapsed" panels */
+    content: "\f067";
+    left: -10px;
+    position: relative;
+    top: 2px;
+}
+
+/* contamination control page css */
+.custom-search-box {
+    padding: 0px 15px 10px 0;
+    box-shadow: 0px 0px 11px -1px #d8d8d8;
+    margin: 0 0 25px 0;
+    float: left;
+    width: 100%;
+}
+
+.custom-search-box p.filter-title {
+    margin: 0px;
+    margin: 0px;
+    padding: 15px;
+    font-weight: 600;
+}
+
+.btn-cat-search {
+    padding: 7px !important;
+    line-height: 5px !important;
+    font-size: 17px !important;
+}
+
+#contentCCMain {
+    margin-top: 10px;
+}
+
+/* */
+
+@media(min-width:768px) {
+
+
+
+    .nav-tabs {
+        display: flex;
+    }
+
+    #content .card {
+        border: none;
+    }
+
+    #content .card .card-header {
+        display: none;
+    }
+
+    #content .card .collapse {
+        display: block;
+    }
+
+    .tabs-custom-font a {
+        font-size: 9.5pt;
+    }
+}
+
+@media(max-width:767px) {
+
+    .all-tab-tables .dataTables_length {
+        position: static !important;
+        float: none;
+        text-align: center;
+    }
+
+    .nav-tabs {
+        display: none !important;
+    }
+
+    .tab-content>.tab-pane {
+        display: block !important;
+        opacity: 1 !important;
+    }
+
+    #contentCCMain {
+        padding-left: 15px;
+    }
+}
+
+.column-visiblity {
+    float: left;
+}
+
+.column-visiblity ul.main-ul {
+    padding: 0px;
+    list-style-type: none;
+    border-radius: 3px;
+    margin-bottom: 0px;
+}
+
+.column-visiblity ul.dropdown-menu {
+    padding: 10px !important;
+    min-width: 195px;
+}
+
+/* .sidebar-menu {
+    padding-top: 10px;
+} */
+
+.btnExportStyle .btn-outline-info {
+    color: #17a2b8 !important;
+    border-color: #17a2b8 !important;
+    background-image: none !important;
+    background-color: transparent !important;
+    font-size: 14px !important;
+    height: 31px !important;
+    line-height: 31px;
+}
+
+.btnExportStyle .btn-outline-info:hover {
+    color: #fff;
+    background-color: #17a2b8 !important;
+    border-color: #17a2b8;
+}
+
+.btnExportStyle .btn-outline-info:hover span {
+    color: #fff;
+
+}
+
+.btnExportStyle .btn-outline-info span:before {
+    content: "\f1c3";
+    left: -6px;
+    font-family: FontAwesome !important;
+    position: relative;
+}
+
+.visibilityCheckCommon label {
+    margin: 5px 0;
+    line-height: 8px;
+}
+
+.visibilityCheckCommon input {
+    position: relative;
+    top: 2px;
+    margin-right: 6px;
+}
+
+
+
+
+/* Top profile dropdown */
+.user-profile-main button#userProfileMenu {
+    /* background: none; padding: 3px;*/
+    border: 1px solid #6c757d;
+    float: right;
+}
+
+.user-profile-main .dropdown-menu p {
+    padding: 0 10px;
+}
+
+p.user-name {
+    margin-bottom: 4px;
+    font-size: 12pt;
+    font-weight: 600;
+}
+
+.user-designation {
+    margin-bottom: 2px;
+    padding-left: 37px;
+}
+
+span.name-initl {
+    border: 1px solid #333;
+    border-radius: 50%;
+    padding: 2px 3px;
+    width: 30px;
+    height: 30px;
+    float: left;
+    text-align: center;
+    letter-spacing: 1px;
+    color: #ffcd11;
+    margin-right: 5px;
+}
+
+.user-profile-main .dropdown-toggle::after {
+    display: none;
+}
+
+.nav-logo-link .nav-logo {
+    fill: #fff;
+    width: 90px;
+}
+
+svg:not(:root) {
+    overflow: hidden;
+}
+
+.nav-logo-link .nav-logo-title {
+    margin-left: 10px;
+    font-size: 23px;
+    height: 0px;
+    line-height: 1;
+    text-transform: uppercase;
+    font-weight: bold;
+    width: 135px;
+    position: relative;
+    top: -21px;
+    text-align: center;
+}
+
+.nav-logo-title span {
+    font-size: 0.7em;
+}
+
+.nav-logo-link {
+    display: inline-flex;
+    text-transform: uppercase;
+    font-weight: 700;
+    color: #fff !important;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    height: 39px;
+    width: 190px;
+}
+
+a:hover {
+    text-decoration: none !important;
+}
+
+@media (min-width:501px) {
+    .release-notes-container {
+        display: grid;
+        grid-gap: 30px;
+        grid-template-columns: auto auto;
+    }
+
+    .release-date {
+        width: 80px;
+    }
+
+    .release-content {
+        border-left: 1px solid gray;
+        padding-left: 10px;
+    }
+}
+
+.sidebar-submenu ul li a {
+    padding-left: 0px !important;
+}
+
+.sidebar-submenu ul li a span {
+    font-size: 13px !important;
+}
+
+.ass-tables h6 {
+    position: relative;
+    font-weight: 600;
+    font-size: 14.4px;
+    margin-bottom: -18px;
+}
+
+.ass-tables1 h6 {
+    font-size: 14.4px;
+    font-weight: 600;
+}
+
+.card-body.ass-tables,
+.card-body.ass-tables1 {
+    border-bottom: 1px solid #d0d0d0;
+    padding-left: 5px;
+}
+
+.cc-tabs-main {
+    float: left;
+    width: 100%;
+    margin-top: 20px;
+
+}
+
+.nav-tabs .nav-item {
+    position: relative;
+}
+
+.nav-tabs .nav-link.active:after {
+    content: '';
+    position: absolute;
+    top: 54px;
+    left: 39%;
+    margin-left: 0;
+    width: 0;
+    height: 0;
+    border-top: solid 10px #000000;
+    border-left: solid 10px transparent;
+    border-right: solid 10px transparent;
+    z-index: 9;
+}
+
+.cc-tabs-main .nav-tabs {
+    border-bottom: 1px solid #000000;
+}
+
+.cc-tabs-main .nav-tabs .nav-item {
+    margin: 0px;
+}
+
+.cc-tabs-main .nav-tabs .nav-link {
+    text-align: center;
+    border-radius: 0 !important;
+    background: #ececec;
+    border: 1px solid #fff;
+    color: #2b2b2b;
+}
+
+.cc-tabs-main .nav-tabs .nav-link.active {
+    color: #ffffff;
+    background-color: #000;
+    border: 1px solid transparent;
+}
+
+.dataTables_wrapper {
+    top: 10px;
+}
+
+#contentCCMain .col-sm-6 {
+    margin-bottom: 10px;
+}
+
+
+
+.cos-impact-box {
+    float: right;
+    position: relative;
+    top: 0px;
+    z-index: 9;
+    right: 145px;
+}
+
+.cos-impact-box label {
+    float: left;
+    width: 76px;
+    margin: 0;
+    line-height: 33px;
+}
+
+select#costImpactControlSelect1 {
+    float: left;
+    width: 95px;
+}
+
+.home-page-collapse .panel-heading .accordion-toggle:after {
+    /* symbol for "opening" panels */
+    font-family: 'Glyphicons Halflings';
+    /* essential for enabling glyphicon */
+    content: "\e114";
+    /* adjust as needed, taken from bootstrap.css */
+    float: right;
+    /* adjust as needed */
+    color: grey;
+    /* adjust as needed */
+}
+
+.home-page-collapse .panel-heading .accordion-toggle.collapsed:after {
+    /* symbol for "collapsed" panels */
+    content: "\e080";
+    /* adjust as needed, taken from bootstrap.css */
+}
+
+.btn-export {
+    position: relative;
+    float: right;
+    top: -13px;
+}
+
+.assessment-summary-head {
+    border-top: 1px solid #d0d0d0;
+    padding: 0 0 5px 0;
+}
+
+.assessment-summary-head .text-label {
+    font-weight: bold;
+}
+
+.text-label img {
+    max-width: 120px;
+}
+
+.text-label-table {
+    max-width: 120px;
+}
+
+.hideinsmall .sidebar-submenu {
+    display: none !important;
+}
+
+.badges-common {
+    position: relative;
+    right: 0;
+    float: right;
+    top: 11px;
+    background: #fff;
+    padding-left: 15px;
+}
+
+.badges-common span {
+    padding-right: 15px;
+}
+
+.badges-common span.red-badge i {
+    color: #ff0000;
+}
+
+.badges-common span.orange-badge i {
+    color: #ffa500;
+}
+
+.badges-common span.green-badge i {
+    color: #008000;
+}
+
+.badges-common span.grey-badge i {
+    color: #808080;
+}
+
+.assessment-summary-body {
+    border-top: 1px solid #d0d0d0;
+    padding: 15px 0;
+}
+
+.assessment-summary-body .table-body-main th,
+.assessment-summary-body .table-body-main td {
+    text-align: right;
+    padding-bottom: 0px;
+}
+
+.table-popup th {
+    width: 100px;
+    vertical-align: top !important;
+    padding: 5px 0 !important;
+}
+
+.table-popup th,
+.table-popup td {
+    text-align: center;
+}
+
+.assessment-summary-body .table-body-main td i {
+    color: #e4de1d;
+}
+
+#toggle-search-a {
+    float: left;
+    font-weight: bold;
+    font-size: 16pt;
+    padding: 0 5px;
+    line-height: 1px;
+    width: 29px;
+    margin-right: 8px;
+    height: 20px;
+
+}
+
+.question-tooltip {
+    background: none !important;
+    border: none !important;
+    padding: 0 !important;
+    cursor: pointer;
+}
+
+.question-tooltip i {
+    color: #000 !important;
+}
+
+.all-tab-tables .dataTables_filter {
+    position: absolute;
+    top: -46px;
+    right: 1px;
+}
+
+.all-tab-tables .btnExportStyle .buttons-excel {
+    padding: 0 0 0 13px !important;
+}
+
+.all-tab-tables .dataTables_length {
+    position: absolute;
+    left: 202px;
+    bottom: 1px;
+}
+
+
+.hide-section {
+    display: none;
+}
+
+.multiselect-ui .btn-default {
+    color: #333 !important;
+    background-color: #fff !important;
+    border-color: #ccc !important;
+    font-size: .8rem !important;
+}
+
+.multiselect-ui .multiselect-container>li>a>label.checkbox,
+.multiselect-ui .multiselect-container>li>a>label.radio {
+    margin: 0;
+    padding: 5px 0 5px 10px;
+}
+
+.multiselect-ui .dropdown-toggle {
+    text-align: left;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    width: calc(100% - 20px);
+}
+
+.multiselect-ui .multiselect-selected-text {
+    width: calc(100% - 20px);
+    display: inline-block;
+
+}
+
+.multiselect-ui .dropdown-toggle .caret {
+    text-align: right;
+    margin: -4px;
+    text-align: right;
+    /* margin: -4px; */
+    background: #fff;
+    width: 14px;
+    position: relative;
+    height: 16px;
+    float: right;
+    top: 6px;
+    right: -8px;
+}
+
+.multiselect-ui .dropdown-toggle::after {
+    margin-left: 1.255em;
+    top: 13px;
+    float: left;
+    position: absolute;
+    right: 4px;
+}
+
+.multiselect-container>li>a>label>input[type=checkbox] {
+    position: relative;
+    top: 1px;
+}
+
+.cc-view-page .col-sm-6 {
+    padding-right: 5px;
+}
+
+button#toggle-search-a {
+    background: #000 !important;
+    border-color: #000 !important;
+    color: #fff !important;
+}
+
+button.collapsed#toggle-search-a {
+    background: #ececec !important;
+    border-color: #ececec !important;
+    color: #000 !important;
+}
+
+.for-btn .btn-primary:not(:disabled):not(.disabled).active:focus,
+.for-btn .btn-primary:focus {
+    box-shadow: none;
+}
+
+.assessment-summary-head table td,
+.assessment-summary-head table th {
+    padding-bottom: 0px !important;
+}
